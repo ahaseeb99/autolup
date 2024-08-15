@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>autoLUP | Vehicle Detail</title>
+
+   <link rel="icon" type="image/x-icon" href="assets/images/logo/fav-icon-blue-bg.png">
+
+   <!-- Font Awesome 4.7.0 Offline-->
+   <link rel="stylesheet" href="assets/plugin/fontawesome/css/all.css">
+   <!-- Google Font Roboto -->
+   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
+   <!-- Bootstrap core CSS Offline-->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <!-- Your custom styles (optional) -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/query.css">
+
+</head>
+
+<body style="color: antiquewhite;">
+
+   <!-- header -->
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo/logo-transparent-bg.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mb-lg-0 me-0 ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="support.html">Support</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="terms-and-condition.html">Terms & Conditons</a>
+                  </li>
+                  <div class="dropdown">
+                     <button class="btn dropdown-toggle profile-btn ps-5 rounded-0 ms-5" type="button" id="profile-btn"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="fa fa-user mr-2"></i> -->
+                        <img src="assets/images/icons/user-icon-yellow.svg" alt="user-icon" width="40px" class="me-2">
+                        Profile
+                     </button>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">User Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="sign-in.html">Login</a></li>
+                        <li><a class="dropdown-item" href="sign-up.html">Signup</a></li>
+                     </ul>
+                  </div>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- header End-->
+
+   <!-- banner -->
+   <!-- <div class="searchbar-div" style="height: 81vh;"> -->
+   <section class="inner-banner bg-inner">
+      <div class="container">
+         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+            <div class="col">
+               <div class="section-title text-start">
+                  <h1 class="text-white">
+                     Car Details
+                  </h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- banner END-->
+
+   <!-- product detail -->
+   <section class="listing-section">
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+            <div class="col">
+               <div class="section-title text-start">
+                  <h4 class="text-blue">
+                     Car Name
+                  </h4>
+                  <div class="breadcrumb">
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Used Cars</a></li>
+                        <li><a href="#">Family Car</a></li>
+                        <li>Car Name</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row g-4">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+               <div class="left-pane">
+                  <div class="product-detail-gallery">
+                     <div class="image-gallery-carousel">
+                        <div class="mySlides">
+                           <img src="assets/images/card/5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                           <img src="assets/images/card/2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                           <img src="assets/images/card/3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                           <img src="assets/images/card/4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                           <img src="assets/images/card/1.png" style="width:100%">
+                        </div>
+
+                        <div class="row-gallery"
+                           style="position: relative; display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+                           <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                           <a class="next" onclick="plusSlides(1)">❯</a> -->
+                           <div class="grid-gallery">
+                              <img class="cursor" src="assets/images/card/5.jpg" style="width:100%"
+                                 onclick="currentSlide(1)" alt="The Woods">
+                           </div>
+                           <div class="grid-gallery">
+                              <img class="cursor" src="assets/images/card/2.png" style="width:100%"
+                                 onclick="currentSlide(2)" alt="Cinque Terre">
+                           </div>
+                           <div class="grid-gallery">
+                              <img class="cursor" src="assets/images/card/3.png" style="width:100%"
+                                 onclick="currentSlide(3)" alt="Mountains and fjords">
+                           </div>
+                           <div class="grid-gallery">
+                              <img class="cursor" src="assets/images/card/4.png" style="width:100%"
+                                 onclick="currentSlide(4)" alt="Northern Lights">
+                           </div>
+                           <div class="grid-gallery">
+                              <img class="cursor" src="assets/images/card/1.png" style="width:100%"
+                                 onclick="currentSlide(5)" alt="Northern Lights">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="product-detail my-5">
+                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+                        <div class="col">
+                           <div class="section-title text-start border-bottom border-1">
+                              <h4>
+                                 Vehicle Specifications
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+                        <div class="col">
+                           <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4 my-3">
+                              <div class="col">
+                                 <table class="table table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <th>Registration</th>
+                                          <td>2022</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Brand/Model</th>
+                                          <td>BMW 3 Series</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Body Style</th>
+                                          <td>Sedan</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Color</th>
+                                          <td>White</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Fuel Type</th>
+                                          <td>Gasoline</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Engine</th>
+                                          <td>255 hp@5000 rpm</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="col">
+                                 <table class="table table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <th>Condition</th>
+                                          <td>New</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Mileage</th>
+                                          <td>20,000 mi</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Transmission</th>
+                                          <td>8-Speed A/T</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Drivetrain</th>
+                                          <td>All Wheels Drive</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Interior Color</th>
+                                          <td>Black/Red</td>
+                                       </tr>
+                                       <tr>
+                                          <th>No. of Seats</th>
+                                          <td>2</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sodales dictum.
+                              Donec porttitor, erat non egestas condimentum, felis velit aliquam tortor, sed ullamcorper
+                              mauris odio in ipsum. Maecenas rutrum ante quis lectus semper, a ornare magna blandit.
+                              Suspendisse id dui non mi consequat placerat. Praesent lobortis tempus eros, quis sagittis
+                              metus. Sed lacinia elementum ipsum, eget condimentum lectus euismod et. Phasellus eu
+                              lectus pretium, lobortis metus at, mollis nibh. Mauris rutrum fringilla libero, nec
+                              ullamcorper lacus ornare vel. Sed faucibus sagittis nisi eu dictum. Orci varius natoque
+                              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                           </p>
+                           <p>
+                              Sed ultrices justo ut dolor dignissim dictum. Nunc sit amet turpis volutpat, semper ipsum
+                              non, ultrices magna. Aliquam at rhoncus libero, eget ornare sapien. In commodo commodo
+                              consectetur. Morbi fermentum, sem vel tincidunt accumsan, massa sapien ultrices orci, ut
+                              lobortis augue turpis ut lectus. In urna felis, semper faucibus dapibus ut, faucibus sed
+                              neque. Duis porta cursus leo, vel condimentum risus dignissim at. Nullam tempor
+                              ullamcorper erat nec aliquam. Maecenas vel consectetur dolor. Fusce a aliquet massa.
+                           </p>
+                        </div>
+                        <div class="col">
+                           <div class="section-title text-start">
+                              <h5>
+                                 Highlights of the new Audi S5 Sportsback
+                              </h5>
+                           </div>
+                           <ol>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                              <li>Integer nec sem eu arcu efficitur ullamcorper.</li>
+                              <li>Maecenas rhoncus massa et tempus vestibulum.</li>
+                              <li>Maecenas sed tortor vitae nibh hendrerit sodales.</li>
+                              <li>Curabitur vehicula felis ac est tempus cursus.</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+               <div class="right-pane">
+                  <div class="seller-price bg-yellow">
+                     <p>
+                        Seller Price
+                        <span>
+                           $53,395
+                        </span>
+                     </p>
+                  </div>
+                  <div class="report">
+                     <button class="btn btn-theme-outline w-100 my-3 report-btn">
+                        <i class="fa fa-flag"></i>
+                        Report/Complain
+                     </button>
+                  </div>
+                  <div class="seller-profile">
+                     <div class="card mb-4">
+                        <div class="profile bg-blue">
+                           <!-- <div class="row align-items-center">
+                              <div class="col-sm-3 col-md-3 col-lg-3">
+                                 <div class="profile-img">
+                                    <img src="assets/images/profile/1.jpg" alt="profile-img">
+                                 </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                 <div class="profile-detail">
+                                    <h4 class="text-white">
+                                       Jane William
+                                    </h4>
+                                    <span>
+                                       Member since April 2019
+                                    </span>
+                                 </div>
+                              </div>
+                           </div> -->
+                           <div class="d-flex align-items-center contact-detail-phone">
+                              <div class="w-33 left">
+                                 <div class="profile-img">
+                                    <img src="assets/images/profile/1.jpg" alt="profile-img">
+                                 </div>
+                              </div>
+                              <div class="w-77 right">
+                                 <div class="profile-detail">
+                                    <h4 class="text-white">
+                                       Jane William
+                                    </h4>
+                                    <!-- <h2 class="text-white">
+                                       Jane William
+                                    </h2> -->
+                                    <span>
+                                       Member since April 2019
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="contact">
+                           <div class="row align-items-center">
+                              <!-- <div class="col-sm-3 col-md-3 col-lg-3">
+                                 <div class="contact-icon">
+                                    <i class="fa fa-phone"></i>
+                                 </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                 <div class="contact-detail">
+                                    <span>
+                                       Contact Seller
+                                    </span>
+                                    <h2>
+                                       1 XXX XXX XX
+                                    </h2>
+                                 </div>
+                              </div> -->
+                              <!-- <div class="col-sm-12 col-md-12 col-lg-12 text-center my-5"> -->
+                              <div class="col-sm-12 col-md-12 col-lg-12 mb-3">
+                                 <div class="d-flex align-items-center contact-detail-phone">
+                                    <div class="w-33 left">
+                                       <div class="contact-icon">
+                                          <!-- <img src="assets/images/profile/1.jpg" alt="profile-img"> -->
+                                          <i class="fa fa-phone"></i>
+                                       </div>
+                                    </div>
+                                    <div class="w-77 right">
+                                       <div class="contact-detail">
+                                          <span>
+                                             Contact Seller
+                                          </span>
+                                          <h4>
+                                             1 XXX XXX XX
+                                          </h4>
+                                          <!-- <h2>
+                                             1 XXX XXX XX
+                                          </h2> -->
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <a href="#">
+                                    <h6 class="text-blue mt-3">
+                                       Connect with <strong>Facebook</strong>
+                                    </h6>
+                                    <!-- <h4 class="text-blue">
+                                       Connect with <strong>Facebook</strong>
+                                    </h4> -->
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="notice">
+                           <h5 class="text-blue">Safety tips for transactions</h5>
+                           <ol>
+                              <li>Use a safe location to meet seller.</li>
+                              <li>Use a safe location to meet seller.</li>
+                              <li>Use a safe location to meet seller.</li>
+                           </ol>
+                           <a href="#"> Learn more... </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+            <div class="product-detail my-5">
+               <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+                  <div class="col">
+                     <div class="section-title text-start border-bottom border-1">
+                        <h4>
+                           Vehicle Specifications
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+                  <div class="col">
+                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 my-3">
+                        <div class="col">
+                           <table class="table table-bordered">
+                              <tbody>
+                                 <tr>
+                                    <th>Registration</th>
+                                    <td>2022</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Brand/Model</th>
+                                    <td>BMW 3 Series</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Body Style</th>
+                                    <td>Sedan</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Color</th>
+                                    <td>White</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Fuel Type</th>
+                                    <td>Gasoline</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Engine</th>
+                                    <td>255 hp@5000 rpm</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="col">
+                           <table class="table table-bordered">
+                              <tbody>
+                                 <tr>
+                                    <th>Condition</th>
+                                    <td>New</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Mileage</th>
+                                    <td>20,000 mi</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Transmission</th>
+                                    <td>8-Speed A/T</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Drivetrain</th>
+                                    <td>All Wheels Drive</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Interior Color</th>
+                                    <td>Black/Red</td>
+                                 </tr>
+                                 <tr>
+                                    <th>No. of Seats</th>
+                                    <td>2</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sodales dictum.
+                        Donec porttitor, erat non egestas condimentum, felis velit aliquam tortor, sed ullamcorper
+                        mauris odio in ipsum. Maecenas rutrum ante quis lectus semper, a ornare magna blandit.
+                        Suspendisse id dui non mi consequat placerat. Praesent lobortis tempus eros, quis sagittis
+                        metus. Sed lacinia elementum ipsum, eget condimentum lectus euismod et. Phasellus eu
+                        lectus pretium, lobortis metus at, mollis nibh. Mauris rutrum fringilla libero, nec
+                        ullamcorper lacus ornare vel. Sed faucibus sagittis nisi eu dictum. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                     </p>
+                     <p>
+                        Sed ultrices justo ut dolor dignissim dictum. Nunc sit amet turpis volutpat, semper ipsum
+                        non, ultrices magna. Aliquam at rhoncus libero, eget ornare sapien. In commodo commodo
+                        consectetur. Morbi fermentum, sem vel tincidunt accumsan, massa sapien ultrices orci, ut
+                        lobortis augue turpis ut lectus. In urna felis, semper faucibus dapibus ut, faucibus sed
+                        neque. Duis porta cursus leo, vel condimentum risus dignissim at. Nullam tempor
+                        ullamcorper erat nec aliquam. Maecenas vel consectetur dolor. Fusce a aliquet massa.
+                     </p>
+                  </div>
+                  <div class="col">
+                     <div class="section-title text-start">
+                        <h5>
+                           Highlights of the new Audi S5 Sportsback
+                        </h5>
+                     </div>
+                     <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Integer nec sem eu arcu efficitur ullamcorper.</li>
+                        <li>Maecenas rhoncus massa et tempus vestibulum.</li>
+                        <li>Maecenas sed tortor vitae nibh hendrerit sodales.</li>
+                        <li>Curabitur vehicula felis ac est tempus cursus.</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="container my-4">
+         <div class="listing">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4">
+               <div class="col">
+                  <div class="section-title text-center">
+                     <h4 class="text-blue">
+                        Similar Cars
+                     </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+               <div class="col">
+                  <div class="card h-100 listing-card">
+                     <div class="card-img">
+                        <img src="assets/images/card/1.png" class="card-img-top" alt="...">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="card-title">Toyota Prado</h3>
+                        <div class="card-details">
+                           <div class="row row-cols-1 row-cols-sm-1">
+                              <!-- <div class="col">
+                                       <span class="location">
+                                          City
+                                       </span>
+                                    </div> -->
+                              <div class="col">
+                                 <ul>
+                                    <li>
+                                       2018
+                                    </li>
+                                    <li>
+                                       20,000 km
+                                    </li>
+                                    <li>
+                                       Hybrid
+                                    </li>
+                                    <li>
+                                       1800cc
+                                    </li>
+                                    <li>
+                                       Automatic
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-total">
+                           <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 align-items-center">
+                              <div class="col">
+                                 <h4 class="m-0">$85,000</h4>
+                              </div>
+                              <div class="col">
+                                 <div class="bg-phone">
+                                    <!-- <p>Show phone No.</p> -->
+                                    <button class="btn-phone btn">Show phone No.</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card h-100 listing-card">
+                     <div class="card-img">
+                        <img src="assets/images/card/2.png" class="card-img-top" alt="...">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="card-title">BMW 7 SERIES</h3>
+                        <div class="card-details">
+                           <div class="row row-cols-1 row-cols-sm-1">
+                              <!-- <div class="col">
+                                       <span class="location">
+                                          City
+                                       </span>
+                                    </div> -->
+                              <div class="col">
+                                 <ul>
+                                    <li>
+                                       2018
+                                    </li>
+                                    <li>
+                                       20,000 km
+                                    </li>
+                                    <li>
+                                       Hybrid
+                                    </li>
+                                    <li>
+                                       1800cc
+                                    </li>
+                                    <li>
+                                       Automatic
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-total">
+                           <div class="row row-cols-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 align-items-center">
+                              <div class="col">
+                                 <h4 class="m-0">$85,000</h4>
+                              </div>
+                              <div class="col">
+                                 <div class="bg-phone">
+                                    <!-- <p>Show phone No.</p> -->
+                                    <button class="btn-phone btn">Show phone No.</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card h-100 listing-card">
+                     <div class="card-img">
+                        <img src="assets/images/card/3.png" class="card-img-top" alt="...">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="card-title">Audi A4</h3>
+                        <div class="card-details">
+                           <div class="row row-cols-1 row-cols-sm-1">
+                              <!-- <div class="col">
+                                       <span class="location">
+                                          City
+                                       </span>
+                                    </div> -->
+                              <div class="col">
+                                 <ul>
+                                    <li>
+                                       2018
+                                    </li>
+                                    <li>
+                                       20,000 km
+                                    </li>
+                                    <li>
+                                       Hybrid
+                                    </li>
+                                    <li>
+                                       1800cc
+                                    </li>
+                                    <li>
+                                       Automatic
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-total">
+                           <div class="row row-cols-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 align-items-center">
+                              <div class="col">
+                                 <h4 class="m-0">$85,000</h4>
+                              </div>
+                              <div class="col">
+                                 <div class="bg-phone">
+                                    <!-- <p>Show phone No.</p> -->
+                                    <button class="btn-phone btn">Show phone No.</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- product detail END -->
+
+
+
+   <!-- footer -->
+   <footer class="border-top border-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+         <div class="container">
+            <div class="me-auto">
+               <h6>
+                  AutoLUP All Rights Reserved.
+               </h6>
+               <!-- <p>
+               AutoLUP All Rights Reserved.
+               </p> -->
+            </div>
+            <div class="ms-auto">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Support</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Terms & Conditons</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </footer>
+   <!-- footer End-->
+
+   <!-- Bootstrap core JavaScript -->
+   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+   <!-- Your custom scripts (optional) -->
+   <script type="text/javascript" src="assets/js/custom.js"></script>
+
+   <script>
+      function openNav() {
+         document.getElementById("mySidebar").style.width = "100%";
+         document.getElementById("main").style.marginLeft = "0px";
+      }
+
+      function closeNav() {
+         document.getElementById("mySidebar").style.width = "0";
+         document.getElementById("main").style.marginLeft = "0";
+      }
+   </script>
+
+   <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("grid-gallery");
+         var captionText = document.getElementById("caption");
+         if (n > slides.length) { slideIndex = 1 }
+         if (n < 1) { slideIndex = slides.length }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active";
+         captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+   </script>
+
+</body>
+
+</html>
